@@ -1,0 +1,12 @@
+<app-header backButton="/main/home" title="perfil"></app-header>
+<ion-content>
+  <div class="d-flex-center">
+    <ion-card color="secondary" >
+      <img src="https://th.bing.com/th/id/OIP.qyRC-MqtaVRsDVBH1L5iVgHaFu?rs=1&pid=ImgDetMain" alt="">
+      <h4>nombre: {{user()?.name}}</h4>
+      <h4>email: {{user()?.email}}</h4>
+      <ion-button class="ion-margin"
+      color="secondary" expand="block" mode="ios" [routerLink]="['/forgot-password']" >¿Olvidaste tu contraseña?</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

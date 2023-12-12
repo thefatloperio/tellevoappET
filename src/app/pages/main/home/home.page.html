@@ -1,0 +1,44 @@
+<ion-menu  contentId="main-content" >
+  <ion-header >
+    <ion-toolbar >
+      <ion-title>Bienvenido Te Llevo App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h4>{{user()?.name}}</h4>
+
+    <ion-button [routerLink]="['/main/map']">Conducir con Te Llevo</ion-button>
+    <br>
+
+    <ion-button [routerLink]="['/main/profile']">perfil</ion-button>
+
+  </ion-content>
+  <ion-button  (click)="salir()" >Cerrar Sesión</ion-button>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" class="glass-content"> 
+    <h1 style="text-align:center" >Bienvenido Estudiante</h1>
+
+    
+    <ion-card class="d-flex-center">
+      <img src="https://cdn.discordapp.com/attachments/1149123407200399461/1149138895435485234/hqdefault.jpg">
+    </ion-card>
+    <h1 style="text-align:center">empleado del mes</h1>
+    <ion-card>
+      <h1 style="text-align:center">isrrael naranjo</h1>
+      <ion-card class="d-flex-center">
+          <img src="https://cdn.discordapp.com/attachments/1149123407200399461/1149164456182550589/1-1.png">
+      </ion-card>
+      <h1 style="text-align:center">un grande siempre estaras en nuestros corazones </h1>
+    </ion-card>
+     
+  </ion-content>
+</div>
